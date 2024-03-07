@@ -495,7 +495,28 @@ video {
 .block {
   display: block;
 }
+.flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.leading-7 {
+  line-height: 1.75rem;
+}
+.leading-10 {
+  line-height: 2.5rem;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
