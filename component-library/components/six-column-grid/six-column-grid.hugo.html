@@ -1,0 +1,18 @@
+<div class="six-column-grid" style="height: {{ .height }}px">
+  {{ range .cards }}
+  <a href="{{ .link }}">
+    {{ if .background_image }}
+    <img
+      style="height: {{ $.height }}px"
+      class="background-image"
+      src="{{ .background_image }}"
+      alt="{{ .text }}" />
+    {{ else if .background_color }}
+    <div
+      class="background-color"
+      style="background-color: {{ .background_color }}"></div>
+    {{ end}}
+    <h2 class="card-heading">{{ .text }}</h2>
+  </a>
+  {{ end }}
+</div>
