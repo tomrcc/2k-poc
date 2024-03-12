@@ -1,6 +1,7 @@
 <div class="hero-slideshow">
   <div class="hero-slideshow-container">
-    {{ range $index, .slides }}
+    {{ range .slides }}
+      <div class="mySlides">
         <img class="background-image" src="{{ .background_image }}">
         <div class="slide-content fade">
           <img class="logo" src="{{ .logo.src }}" style="max-width: {{ .logo.max_width }}px; margin-bottom: {{ .logo.margin_bottom }}px; margin-top: {{ .logo.margin_top }}px;">
@@ -52,6 +53,7 @@
     for(let i = 0; i < slides.length; i++) {
       slides[0].style.display = "block";
       slides[i].style.display = "none";
+      
     }
     slideIndex++;
     if(slideIndex > slides.length) {
