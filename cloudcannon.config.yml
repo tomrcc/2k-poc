@@ -7,10 +7,9 @@ collections_config:
     output: true
     filter: strict
     parse_branch_index: true
-    icon: notes
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
+    icon: computer
+    _enabled_editors:
+      - visual
   data:
     path: data
     output: false

@@ -3,8 +3,8 @@ spec:
   structures:
     - content_blocks
   label: 'Three Column Grid'
-  description:
-  icon: calendar_view_week
+  description: 'A grid of three cards, each with a link, text, and background image.'
+  icon: view_module
   tags:
     - Grid
 
@@ -40,7 +40,16 @@ _inputs:
   link:
     type: url
   background_color:
-    hidden: 'background_image'
+    hidden: 'src'
+  background_image:
+    label: Background Image
+    type: object
+    options:
+      preview:
+        gallery:
+          image:
+            - key: src
+          icon: image
   src:
     label: Image Source
     type: image
@@ -50,3 +59,5 @@ _inputs:
       min: 0
       max: 2
       step: 0.01
+  text:
+    type: textarea

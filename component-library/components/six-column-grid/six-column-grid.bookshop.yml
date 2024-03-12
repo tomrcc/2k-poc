@@ -3,9 +3,10 @@ spec:
   structures:
     - content_blocks
   label: 'Six Column Grid'
-  description:
-  icon: calendar_view_week
-  tags: []
+  description: 'A grid of six cards, each with a link, text, and background image.'
+  icon: view_comfy
+  tags:
+    - Grid
 
 # Defines the structure of this component, as well as the default values
 blueprint:
@@ -23,8 +24,11 @@ preview:
 _inputs:
   height:
     type: number
+    comment: The height of the grid.
   cards:
     type: array
+  cards[*]:
+    type: object
     options:
       preview:
         gallery:
