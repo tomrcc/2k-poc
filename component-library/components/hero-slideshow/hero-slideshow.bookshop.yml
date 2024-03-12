@@ -55,3 +55,17 @@ _inputs:
   slide_time:
     type: number
     comment: 'Time in milliseconds for each slide to be displayed. This will only take effect when the page is saved, and refreshed.'
+  slides:
+    type: array
+  slides[*]:
+    type: object
+    options:
+      preview:
+        image:
+          - key: background_image
+        text:
+          - key: heading
+          - 'Slide'
+        subtext:
+          - key: subheading
+        icon: slideshow

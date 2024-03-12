@@ -31,13 +31,14 @@ _inputs:
     type: object
     options:
       preview:
-        gallery:
-          image:
-            - key: background_image
-          text:
-            - key: text
-            - 'Grid Item'
-          icon: image
+        icon: image
+        image:
+          - key: background_image
+        text:
+          - key: text
+          - 'Grid Item'
+        subtext:
+          - key: link
   link:
     type: url
   background_color:
