@@ -1,9 +1,9 @@
 <div class="hero-slideshow">
   <div class="hero-slideshow-container">
     {{ range .slides }}
-      <div class="mySlides fade">
+      <div class="mySlides">
         <img class="background-image" src="{{ .background_image }}">
-        <div class="slide-content">
+        <div class="slide-content fade">
           <img class="logo" src="{{ .logo.src }}" style="max-width: {{ .logo.max_width }}px; margin-bottom: {{ .logo.margin_bottom }}px; margin-top: {{ .logo.margin_top }}px;">
           <h1 class="heading">{{ .heading }}</h1>
           <h4 class="subheading">{{ .subheading }}</h4>
@@ -30,6 +30,7 @@
   let slideIndex = 0;
   let timeoutId = null;
   const slides = document.getElementsByClassName("mySlides");
+  const slideContent = document.getElementsByClassName("slide-content");
   
   showSlides();
   function currentSlide(index) {
@@ -51,6 +52,7 @@
   function showSlides() {
     for(let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
+      
     }
     slideIndex++;
     if(slideIndex > slides.length) {
