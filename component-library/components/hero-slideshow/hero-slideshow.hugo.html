@@ -1,7 +1,6 @@
 <div class="hero-slideshow">
   <div class="hero-slideshow-container">
-    {{ range .slides }}
-      <div class="mySlides">
+    {{ range $index, .slides }}
         <img class="background-image" src="{{ .background_image }}">
         <div class="slide-content fade">
           <img class="logo" src="{{ .logo.src }}" style="max-width: {{ .logo.max_width }}px; margin-bottom: {{ .logo.margin_bottom }}px; margin-top: {{ .logo.margin_top }}px;">
@@ -51,13 +50,14 @@
   }
   function showSlides() {
     for(let i = 0; i < slides.length; i++) {
+      slides[0].style.display = "block";
       slides[i].style.display = "none";
-      
     }
     slideIndex++;
     if(slideIndex > slides.length) {
       slideIndex = 1
     }
+    slides[0].style.display = "none";
     slides[slideIndex - 1].style.display = "block";
 
       if(timeoutId) {
