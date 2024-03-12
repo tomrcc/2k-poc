@@ -498,9 +498,6 @@ video {
 .flex {
   display: flex;
 }
-.w-full {
-  width: 100%;
-}
 .items-center {
   align-items: center;
 }

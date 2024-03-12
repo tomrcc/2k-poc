@@ -1,14 +1,20 @@
 <div class="hero-slideshow">
   <div class="hero-slideshow-container">
     {{ range .slides }}
-    <a class="mySlides fade" href="{{ .link }}">
-      <img class="background-image" src="{{ .background_image }}">
-      <div class="slide-content">
-        <img class="logo" src="{{ .logo }}">
-        <h1 class="heading">{{ .heading }}</h1>
-        <h4 class="subheading">{{ .subheading }}</h4>
-      </div>
-    </a>
+      <a class="mySlides fade" href="{{ .link }}">
+        <img class="background-image" src="{{ .background_image }}">
+        <div class="slide-content">
+          <img class="logo" src="{{ .logo }}">
+          <h1 class="heading">{{ .heading }}</h1>
+          <h4 class="subheading">{{ .subheading }}</h4>
+        </div>
+      </a>
+      {{ with .primary_button }}
+        {{ partial "bookshop" . }}
+      {{ end }}
+      {{ with .secondary_button }}
+        {{ partial "bookshop" . }}
+      {{ end }}
     {{ end }}
   </div>
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>

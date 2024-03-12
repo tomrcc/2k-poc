@@ -9,7 +9,21 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
-  text: "Hello World!"
+  slides:
+    - background_image: https://cdn.2kgames.com/2023/08/23/64e68baae75e2NBA2K24_keyart.jpg
+      heading: NBA 2K24
+      subheading: SEE YOU ON THE COURT
+      logo: https://cdn.2kgames.com/2023/08/24/64e7c7049954c2k24-logo.jpg
+      link: https://nba.2k.com/2k24/
+      primary_button: bookshop:button
+      secondary_button: bookshop:button
+    - background_image: https://cdn.2kgames.com/2023/10/09/6524129aa7afcNBA-Mobile-Marquee-KM.jpg
+      heading: NBA 2K24
+      subheading: SEE YOU ON THE COURT
+      logo: https://cdn.2kgames.com/2023/08/24/64e7c7049954c2k24-logo.jpg
+      link: https://nba.2k.com/2k24/
+      primary_button: bookshop:button
+      secondary_button: bookshop:button
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
