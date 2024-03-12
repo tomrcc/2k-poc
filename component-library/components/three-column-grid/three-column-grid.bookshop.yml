@@ -17,7 +17,7 @@ blueprint:
       background_image:
         src: https://cdn.2kgames.com/2024/03/08/65eb8286bef0fWWE24-WEBSITE-2K_ASSET600X600.jpg
         brightness: 0.8
-      background_color: '#CC0001'
+        background_color: '#CC0001'
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -28,19 +28,29 @@ _inputs:
     type: number
   cards:
     type: array
+  cards[*]:
+    type: object
     options:
       preview:
-        gallery:
-          image:
-            - key: background_image
-          text:
-            - key: text
-            - 'Grid Item'
-          icon: image
+        image:
+          - key: background_image
+        text:
+          - key: text
+          - 'Grid Item'
+        subtext:
+          - key: link
+        icon: image
   link:
     type: url
   background_color:
     hidden: 'src'
+    type: select
+    options:
+      values: data.colors
+      value_key: value
+      preview:
+        text:
+          - key: label
   background_image:
     label: Background Image
     type: object

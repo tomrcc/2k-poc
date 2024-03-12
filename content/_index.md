@@ -138,17 +138,17 @@ content_blocks:
         background_image:
           src: https://cdn.2kgames.com/2023/05/22/646bfec2cd506aapi-banner.jpg
           brightness: 0.5
-        background_color: '#CC0001'
+          background_color: '#CC0001'
       - link: https://www.2k.com/en-US/blog/womens-history-month-at-2k/
         text: Women's History Month at 2K
         background_image:
           src: https://cdn.2kgames.com/2023/03/24/641ded002e9aawhm-banner.jpg
           brightness: 0.6
-        background_color: '#CC0001'
+          background_color: '#CC0001'
       - link: https://www.2k.com/en-US/blog/black-history-month-at-2k/
         text: Black History Month at 2K
         background_image:
           src: https://cdn.2kgames.com/2023/02/08/63e3f248c1a38bhm-2023-header.jpg
           brightness: 0.6
-        background_color: '#CC0001'
+          background_color: '#CC0001'
 ---

@@ -1,16 +1,16 @@
 <div class="three-column-grid">
   {{ range .cards }}
   <a href="{{ .link }}" style="height: {{ $.height }}px">
-    {{ if .background_image }}
+    {{ if .background_image.src }}
     <img
       style="height: {{ $.height }}px; filter: brightness({{ .background_image.brightness }});"
       class="background-image"
       src="{{ .background_image.src }}"
       alt="{{ .text }}" />
-    {{ else if .background_color }}
+    {{ else if .background_image.background_color }}
     <div
       class="background-color"
-      style="background-color: {{ .background_color }}"></div>
+      style="background-color: {{ .background_image.background_color }}"></div>
     {{ end }}
     <h2 class="card-heading">{{ .text }}</h2>
   </a>
