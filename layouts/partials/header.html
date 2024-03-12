@@ -1,14 +1,13 @@
-{{ with .Site.Data.nav }}
 {{ $c := "header" }}
 <header>
   <nav class="{{ $c }}">
     <div class="{{ $c }}__container">
       <!-- Logo -->
       <a class="{{ $c }}__logo" href="/">
-          <img src="{{ .logo }}" alt="Nav-Logo" />
+          <img src="/images/logos/logo-wordmark-blue.png" alt="Nav-Logo" />
       </a>
       <p class="text-xl font-bold tracking-wider flex items-center">Proof of Concept</p>
     </div>
   </nav>
 </header>
-{{ end }}
+

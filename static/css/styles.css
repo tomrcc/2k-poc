@@ -501,6 +501,9 @@ video {
 .items-center {
   align-items: center;
 }
+.border {
+  border-width: 1px;
+}
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;

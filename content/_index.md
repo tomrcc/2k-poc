@@ -14,12 +14,22 @@ content_blocks:
           text: Hello World!
           background_color: transparent
           color: black
+          border: false
+          border_styles:
+            width: 1
+            style: solid
+            color: "black"
         secondary_button:
           _bookshop_name: button
           link: /
           text: Hello World!
           background_color: transparent
           color: black
+          border: true
+          border_styles:
+            width: 1
+            style: solid
+            color: "black"
       - background_image: >-
           https://cdn.2kgames.com/2023/10/09/6524129aa7afcNBA-Mobile-Marquee-KM.jpg
         heading: NBA 2K24
@@ -32,10 +42,20 @@ content_blocks:
           text: Hello World!
           background_color: transparent
           color: black
+          border: true
+          border_styles:
+            width: 1
+            style: solid
+            color: "black"
         secondary_button:
           _bookshop_name: button
           link: /
           text: Hello World!
           background_color: transparent
           color: black
+          border: true
+          border_styles:
+            width: 1
+            style: solid
+            color: "black"
 ---

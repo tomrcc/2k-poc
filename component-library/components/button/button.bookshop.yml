@@ -12,6 +12,11 @@ blueprint:
   text: "Hello World!"
   background_color: "transparent"
   color: "black"
+  border: true
+  border_styles:
+    width: 1
+    style: solid
+    color: "black"
 
 # Overrides any fields in the blueprint when viewing this component in the component browser
 preview:
@@ -37,4 +42,22 @@ _inputs:
           - key: label
   link:
     type: url
+  width:
+    type: number
+  border_style:
+    hidden: '!border'
+  style:
+    type: select
+    options:
+      values:
+        - solid
+        - dashed
+        - dotted
+        - double
+        - groove
+        - ridge
+        - inset
+        - outset
+        - none
+        - hidden
 

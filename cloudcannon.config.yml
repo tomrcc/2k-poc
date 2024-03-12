@@ -1,7 +1,6 @@
 paths:
   data: data
   uploads: static/images
-  pages: content
 collections_config:
   pages:
     path: content

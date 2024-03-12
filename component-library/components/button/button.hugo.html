@@ -1,3 +1,9 @@
-<button class="button" style="background-color: {{ .background_color }};">
-  <a href="{{ .link }}" style="color: {{ .color }};">{{ .text }}</a>
+<button 
+class="button" 
+style="background-color: {{ .background_color }}; {{ if eq .border true }}border: {{ .border_styles.color }} {{ .border_styles.width }}px {{ .border_styles.style }};{{ end }}">
+  <a 
+  href="{{ .link }}" 
+  style="color: {{ .color }};">
+    {{ .text }}
+  </a>
 </button>
