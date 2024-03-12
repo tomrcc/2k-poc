@@ -44,7 +44,7 @@ _inputs:
     type: url
   width:
     type: number
-  border_style:
+  border_styles:
     hidden: '!border'
   style:
     type: select
