@@ -2,7 +2,7 @@
 title: 2k Games
 content_blocks:
   - _bookshop_name: hero-slideshow
-    slide_time: 1000
+    slide_time: 5000
     slides:
       - background_image: https://cdn.2kgames.com/2023/08/23/64e68baae75e2NBA2K24_keyart.jpg
         heading: NBA 2K24
@@ -103,27 +103,30 @@ content_blocks:
   - _bookshop_name: six-column-grid
     height: 320
     cards:
-      - link: /https://www.2k.com/en-US/en-US/game/wwe-2k24/
-        text: 'WWE 2K24'
-        background_image: https://cdn.2kgames.com/2024/03/08/65eb8286bef0fWWE24-WEBSITE-2K_ASSET600X600.jpg
+      - link: /en-US/game/wwe-2k24/
+        text: WWE 2K24
+        background_image: >-
+          https://cdn.2kgames.com/2024/03/08/65eb8286bef0fWWE24-WEBSITE-2K_ASSET600X600.jpg
         background_color: '#CC0001'
-      - link: 'https://www.2k.com/en-US/en-US/game/nba-2k24/'
+      - link: /en-US/game/nba-2k24/
         text: NBA 2K24
-        background_image: https://cdn.2kgames.com/2023/09/21/650c7a3d7b6cdN24-WEB-KOBE_EDITION_COVER-600x600-R2.jpg
+        background_image: >-
+          https://cdn.2kgames.com/2023/09/21/650c7a3d7b6cdN24-WEB-KOBE_EDITION_COVER-600x600-R2.jpg
         background_color: '#CC0001'
-      - link: 'https://www.2k.com/en-US/en-US/game/lego-2k-drive-standard-edition/'
+      - link: /en-US/game/lego-2k-drive-standard-edition/
         text: LEGO 2K Drive
-        background_image: https://cdn.2kgames.com/2023/06/02/647a0fc8b163dArtemis_Standard_KeyArt_Thumbnail_2kWeb_600x600-1.jpg
+        background_image: >-
+          https://cdn.2kgames.com/2023/06/02/647a0fc8b163dArtemis_Standard_KeyArt_Thumbnail_2kWeb_600x600-1.jpg
         background_color: '#CC0001'
-      - link: 'https://www.2k.com/en-US/en-US/game/marvel-s-midnight-suns/'
+      - link: /en-US/game/marvel-s-midnight-suns/
         text: Marvel's Midnight Suns
         background_image: https://cdn.2kgames.com/2022/06/09/62a2891701479MMS-thumb.jpg
         background_color: '#CC0001'
-      - link: 'https://www.2k.com/en-US/en-US/game/pga-tour-2k23/'
+      - link: /en-US/game/pga-tour-2k23/
         text: PGA TOUR 2K23
         background_image: https://cdn.2kgames.com/2022/08/23/630418c427280p23-fob600w.png
         background_color: '#CC0001'
-      - link: 'https://www.2k.com/en-US/games'
+      - link: games
         text: ALL GAMES
         background_image:
         background_color: '#CC0001'
