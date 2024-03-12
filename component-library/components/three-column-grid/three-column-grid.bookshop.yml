@@ -26,6 +26,7 @@ preview:
 _inputs:
   height:
     type: number
+    comment: 'The height of the grid in pixels.'
   cards:
     type: array
   cards[*]:
@@ -65,6 +66,7 @@ _inputs:
     type: image
   brightness:
     type: number
+    comment: 'The brightness of the background image.'
     options:
       min: 0
       max: 2

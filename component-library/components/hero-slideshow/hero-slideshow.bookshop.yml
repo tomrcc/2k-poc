@@ -69,3 +69,11 @@ _inputs:
         subtext:
           - key: subheading
         icon: slideshow
+  logo:
+    type: object
+    options:
+      preview:
+        gallery:
+          image:
+            - key: src
+          icon: image
