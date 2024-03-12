@@ -43,9 +43,7 @@ img {
 
 .hero-slideshow-container
 .logo {
-  width: 60%;
-  max-width: 450px;
-  margin-bottom: 3px;
+
 }
 .hero-slideshow-container .heading,
 .hero-slideshow-container .subheading {
@@ -63,6 +61,13 @@ img {
 .subheading {
   font-family: Roboto, sans-serif;
   font-weight: 400;
+  font-size: 1.25rem;
+}
+.hero-slideshow-container
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 

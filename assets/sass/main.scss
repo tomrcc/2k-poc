@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:300,700,700i);
 @import 'variables';
 
 main {
@@ -6,7 +7,8 @@ main {
 
 body {
   padding: 0;
-  margin: 0
+  margin: 0;
+  font-family: Roboto, sans-serif;
 }
 
 .header {
@@ -32,4 +34,3 @@ body {
   }
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Condensed:300,700,700i);

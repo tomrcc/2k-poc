@@ -4,10 +4,10 @@
       <div class="mySlides fade">
         <img class="background-image" src="{{ .background_image }}">
         <div class="slide-content">
-          <img class="logo" src="{{ .logo }}">
+          <img class="logo" src="{{ .logo.src }}" style="max-width: {{ .logo.max_width }}px; margin-bottom: {{ .logo.margin_bottom }}px; margin-top: {{ .logo.margin_top }}px;">
           <h1 class="heading">{{ .heading }}</h1>
           <h4 class="subheading">{{ .subheading }}</h4>
-          <div>
+          <div class="buttons">
             {{ with .primary_button }}
               {{ partial "bookshop" . }}
             {{ end }}

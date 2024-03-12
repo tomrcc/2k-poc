@@ -492,6 +492,9 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.mt-2 {
+  margin-top: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -513,4 +516,7 @@ video {
 }
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+.outline {
+  outline-style: solid;
 }

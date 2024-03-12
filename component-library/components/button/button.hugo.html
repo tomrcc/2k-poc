@@ -1,6 +1,6 @@
 <button 
 class="button" 
-style="background-color: {{ .background_color }}; {{ if eq .border true }}border: {{ .border_styles.color }} {{ .border_styles.width }}px {{ .border_styles.style }};{{ end }}">
+style="background-color: {{ .background_color }}; {{ if eq .border true }}outline: {{ .border_styles.color }} {{ .border_styles.width }}px {{ .border_styles.style }}; outline-offset: -{{ .border_styles.width }}px;{{ end }}">
   <a 
   href="{{ .link }}" 
   style="color: {{ .color }};">
