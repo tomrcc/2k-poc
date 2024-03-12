@@ -11,6 +11,7 @@ spec:
 
 # Defines the structure of this component, as well as the default values
 blueprint:
+  slide_time: 5000
   slides:
     - background_image: https://cdn.2kgames.com/2023/08/23/64e68baae75e2NBA2K24_keyart.jpg
       heading: NBA 2K24
@@ -51,3 +52,6 @@ _inputs:
     type: number
   link:
     type: url
+  slide_time:
+    type: number
+    comment: "Time in milliseconds for each slide to be displayed"

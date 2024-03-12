@@ -2,6 +2,7 @@
 title:
 content_blocks:
   - _bookshop_name: hero-slideshow
+    slide_time: 5000
     slides:
       - background_image: https://cdn.2kgames.com/2023/08/23/64e68baae75e2NBA2K24_keyart.jpg
         heading: NBA 2K24
